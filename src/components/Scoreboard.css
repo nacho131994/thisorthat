@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+  margin:o;
+  padding: 0;
+  box-sizing: border-box;
+}
+.modal-container{
+    border:5px solid rgb(8, 68, 133);
+    background-color: rgb(255, 255, 255);
+    color:rgb(8, 68, 133);
+    border-radius:25px;
+    width:auto
+}
+
+.modal-title-scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Bowlby One SC', cursive;
+}
+.modal-titles{
+    text-align: center;
+    font-size:1.5rem;
+    font-family: 'Bowlby One SC', cursive;
+    color:rgb(52, 113, 177);
+}
+.last-ten-scores{
+    /* column-count: 2; 
+    column-gap: 16px;  */
+    text-align: center;
+    font-size:1.3rem;
+    font-family: 'Press Start 2P', cursive;
+  }
+  .highest-score-container{
+      display: flex;
+      align-items: center;
+      padding:8px;
+      gap:15px
+  }
+  .highest-score{
+    text-align: center;
+    font-size:3rem;
+    background-color:rgb(8, 68, 133);
+    color:white;
+    border-radius:50%;
+    width:5rem;
+   
+    font-family: 'Press Start 2P', cursive;
+  }
+  .closeBtn{
+    background-color: rgb(233, 16, 16);
+    border-radius:10px;
+    padding:0.5rem;
+    color:white;
+    font-family: 'Bowlby One SC', cursive;
+    margin-right:50px
+   
+  }
+
+
+  @media (max-width:768px){
+    .highest-score-container{
+      flex-direction: column;
+    }
+
+  }

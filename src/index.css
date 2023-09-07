@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+/*------------------------------RESET------------------------------------------------------*/
+
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+body{
+  height:100vh
+}
+/*----------------------------------------------HEADER----------------------------------------------------*/
+.banner{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:3rem;
+  gap:3rem
+}
+.title{
+  display:flex;
+  justify-content: center;
+  font-family: 'Bowlby One SC', cursive;
+
+  color:  rgb(8, 68, 133) 
+}
+.planet-icon{
+  width:4rem;
+  height:4rem
+}
+/*-----------------------------------------------START GAME OPTIONS-------------------------------------------*/
+.play-button{
+  background-color: rgb(255, 170, 0);
+  width:20rem;
+  height:7rem;
+  font-size: 3rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:3rem auto;
+  border:5px solid rgb(236, 114, 21);
+  border-radius:30px;
+  color:white;
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing:10px
+}
+.play-button:hover{
+  box-shadow: 0px 7px 12px rgb(245, 152, 3);
+
+}
+.scoreboard-button-start-of-the-game{
+  background-color: rgb(126, 175, 226);
+  width:20rem;
+  height:7rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:3rem auto;
+  border:4px solid rgb(8, 68, 133);
+  border-radius:30px;
+  color:white;
+  font-family: 'Bowlby One SC', cursive;
+}
+.scoreboard-button-start-of-the-game:hover{
+  box-shadow: 0px 7px 12px rgb(65, 127, 227);
+}
+
+/*------------------------------------------GAME SECTION----------------------------------------------*/
+.show-scoreboard-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:1rem auto
+}
+.country-options{
+  display:flex;
+  justify-content: center;
+  gap:3rem;
+  margin-top:5rem
+}
+.country-button{
+  background-color: rgb(52, 113, 177);
+  border:4px solid rgb(8, 68, 133);
+  color:white;
+  min-width:20rem;
+  height:4rem;
+  font-size:2rem;
+  border-radius:15px;
+  font-family: 'Bowlby One SC', cursive;
+  -webkit-text-stroke: 2px rgb(8, 68, 133);
+  color: rgb(255, 255, 255); 
+}
+.correct-button {
+  background-color: green; /* Cambia el color de fondo al verde deseado */
+}
+
+.incorrect-button {
+  background-color: red; /* Cambia el color de fondo al rojo o cualquier otro color deseado para respuestas incorrectas */
+}
+.country-button:hover{
+  box-shadow: 0px 7px 12px rgb(0, 0, 0);
+}
+.correct{
+  display:flex;
+  justify-content: center;
+  margin-top:3rem;
+  font-size:3rem;
+  font-family: 'Ranchers', cursive;
+  color:rgb(10, 192, 10)
+}
+.correct-population{
+  display:flex;
+  justify-content: center;
+  margin-top:3rem;
+  font-family: 'Bowlby One SC', cursive;
+  font-size:2rem;
+  -webkit-text-stroke: 2px rgb(8, 68, 133);
+  color: rgb(255, 255, 255); 
+}
+.score{
+  display:flex;
+  justify-content: center;
+  margin-top:5rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size:2rem;
+}
+
+/*-----------------------------------------------END OF THE GAME SECTION--------------------------------------*/
+
+.game-over{
+  color:red;
+  display:flex;
+  justify-content: center;
+  margin-top:3rem;
+  font-family: 'Ranchers', cursive;
+  font-size:5rem;
+}
+.your-final-score{
+  display:flex;
+  justify-content: center;
+  margin-top:3rem;
+  font-family: 'Press Start 2P', cursive;
+}
+.final-score-number{
+  display:flex;
+  justify-content: center;
+  margin-top:1rem;
+  font-size: 3rem;
+  font-family: 'Press Start 2P', cursive;
+  background-color: rgb(8, 68, 133) ;
+  color:white;
+  border-radius:50%;
+  width:5rem;
+  margin:0 auto
+}
+.end-of-the-game-buttons{
+  display: flex;
+  justify-content: center;
+  margin:2.5rem auto;
+  align-items: center;
+  flex-direction: row;
+  gap:2rem;
+}
+.restart-button{
+  width:10rem;
+  height:3rem;
+  border:3px solid rgb(133, 8, 8);
+  border-radius:10px;
+  background-color: rgba(198, 20, 20, 0.097);
+  color:rgb(233, 12, 12);
+  font-family: 'Bowlby One SC', cursive;
+  font-size:1rem;
+  margin:0
+}
+.restart-button:hover{
+  background-color: rgba(198, 20, 20, 0.097);
+  color:rgb(233, 12, 12);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+} 
+.show-scoreboard-button{
+  width:10rem;
+  height:3rem;
+  border:3px solid rgb(8, 68, 133);
+  border-radius:10px;
+  background-color: rgba(175, 155, 155, 0.156);
+  color:rgb(8, 68, 133);
+  font-family: 'Bowlby One SC', cursive;
+  font-size:.85rem;
+  margin:0
+  
+}
+.show-scoreboard-button:hover{
+  background-color: rgba(12, 91, 176, 0.156);
+  color:rgb(8, 68, 133);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*----------------------------------------RESPONSIVE-----------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  
+  .banner {
+    flex-direction: column; 
+    gap: 1.5rem;
+  }
+  .title{
+    text-align: center;
+    margin:0
+  }
+  .planet-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  .start-the-game-options{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width:min-content;
+    margin-top:3rem
+  }
+  .play-button{
+    min-width:10rem;
+    height:fit-content;
+    margin-top:7rem
+   
+  }
+  .scoreboard-button-start-of-the-game{
+    min-width:10rem;
+    height:fit-content
+  }
+  .country-options {
+    flex-direction: column; /* Cambiar a disposición vertical */
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .country-button {
+    min-width: auto; 
+    width: 80%;
+    margin:0 auto;
+    height:5rem;
+    font-size: 8vw
+  }
+  .country-button:hover{
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+   
+  }
+
+  .correct,
+  .score,
+  .your-final-score,
+  .restart-button,
+  .game-over {
+    font-size: 1.5rem;
+    text-align:center;
+    margin-top:1rem
+  }
+  
+.game-over {
+  font-size: 3.5rem;
+}
+.correct{
+  font-size:3rem
+}
+.correct-population{
+text-align: center;
+font-size: 1.5rem;
+margin-top:1rem
+}
+
+
+  .restart-button{
+    width:13rem;
+    height:3rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+
+  
+
+  
+
+ 
+  .end-of-the-game-buttons{
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    align-items: center;
+    flex-direction: column;
+    }
+  .show-scoreboard-button{
+    width:13rem;
+    height:3rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+     font-size: 1.1rem;
+    text-align:center;
+    
+  }
+
+}
