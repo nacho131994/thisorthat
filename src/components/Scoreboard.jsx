@@ -72,7 +72,9 @@ const Scoreboard = () => {
               </p>
               <div className="highest-score-container">
                 <p className="modal-titles">YOUR HIGHEST SCORE IS: </p>
-                <p className="highest-score">{showTen}</p>
+                <p className="highest-score">
+                  {showTen.sort()[showTen.length - 1]}
+                </p>
               </div>
             </div>
           </div>
