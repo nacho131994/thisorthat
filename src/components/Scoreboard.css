@@ -27,6 +27,11 @@
     font-family: 'Bowlby One SC', cursive;
     color:rgb(52, 113, 177);
 }
+.no-scores{
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+}
 .last-ten-scores{
     /* column-count: 2; 
     column-gap: 16px;  */
