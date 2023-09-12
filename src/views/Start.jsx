@@ -156,9 +156,10 @@ const Start = () => {
   //-----------------------------------------------------------------------------------------------------------------
 
   const loadScoreboard = () => {
-    const localStorgeData = JSON.parse(localStorage.getItem("scoreboard"));
-    setScoreboard(localStorgeData);
+    let localStorgeData = JSON.parse(localStorage.getItem("scoreboard"));
+    setScoreboard(localStorgeData !== null ? localStorgeData : []);
   };
+  //-----------------------------------------------------------------------------------------------------------------
   useEffect(() => {
     loadScoreboard();
     generateRandomCountries();
@@ -176,7 +177,7 @@ const Start = () => {
     <>
       <div className="app-container">
         <div className="banner">
-          <h1 className="title">WHICH COUNTRY HAS THE HIGHEST POPULATION?</h1>
+          <h1 className="title"> WHICH COUNTRY HAS THE HIGHEST POPULATION?</h1>
           <img src={planet} alt="planet" className="planet-icon" />
         </div>
         {showPlayButton && (
