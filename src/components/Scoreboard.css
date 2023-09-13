@@ -46,14 +46,18 @@
       gap:15px
   }
   .highest-score{
+    display:flex;
+    justify-content: center;
     text-align: center;
-    font-size:3rem;
+    align-items: center;;
+    font-size:2rem;
     background-color:rgb(8, 68, 133);
     color:white;
     border-radius:50%;
     width:5rem;
-   
+   height:5rem;
     font-family: 'Press Start 2P', cursive;
+
   }
   .closeBtn{
     background-color: rgb(233, 16, 16);
@@ -69,6 +73,19 @@
   @media (max-width:768px){
     .highest-score-container{
       flex-direction: column;
+    }
+    .highest-score{
+      display:flex;
+      justify-content: center;
+      text-align: center;
+      font-size:2rem;
+      background-color:rgb(8, 68, 133);
+      color:white;
+      border-radius:50%;
+      width:5rem;
+     height:5rem;
+      font-family: 'Press Start 2P', cursive;
+  
     }
 
   }

@@ -22,6 +22,7 @@ const Scoreboard = () => {
     showOnlyTen();
   }, []);
 
+  // console.log(Math.max(...showTen.map(String)));
   if (showTen.length <= 0) {
     return (
       <div
@@ -73,7 +74,7 @@ const Scoreboard = () => {
               <div className="highest-score-container">
                 <p className="modal-titles">YOUR HIGHEST SCORE IS: </p>
                 <p className="highest-score">
-                  {showTen.sort()[showTen.length - 1]}
+                  {Math.max(...showTen.map(String))}
                 </p>
               </div>
             </div>
