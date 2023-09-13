@@ -150,7 +150,6 @@ const Start = () => {
   const handleRestart = () => {
     setGameOver(false);
     generateRandomCountries();
-
     setScore(0);
   };
   //-----------------------------------------------------------------------------------------------------------------
@@ -167,9 +166,11 @@ const Start = () => {
 
   useEffect(() => {
     if (gameOver) {
-      scoreboard.push(score);
-      setScoreboard([...scoreboard]);
-      localStorage.setItem("scoreboard", JSON.stringify(scoreboard));
+      localStorage.setItem(
+        "scoreboard",
+        JSON.stringify(scoreboard.concat([score]))
+      );
+      setScoreboard(scoreboard.concat([score]));
     }
   }, [gameOver]);
   //-----------------------------------------------------------------------------------------------------------------
