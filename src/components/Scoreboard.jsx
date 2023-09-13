@@ -71,8 +71,12 @@ const Scoreboard = () => {
                   <p>{key}</p>
                 ))}
               </p>
+              <div className="last-score-container">
+                <p className="modal-titles">LAST SCORE: </p>
+                <p className="highest-score">{showTen[showTen.length - 1]}</p>
+              </div>
               <div className="highest-score-container">
-                <p className="modal-titles">YOUR HIGHEST SCORE IS: </p>
+                <p className="modal-titles">HIGHEST SCORE: </p>
                 <p className="highest-score">
                   {Math.max(...showTen.map(String))}
                 </p>
